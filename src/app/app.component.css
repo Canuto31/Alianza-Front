@@ -1,0 +1,63 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    /* background-color: #333; */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    /* border-bottom: 1px solid #555; */
+}
+
+.menu-item a:hover {
+    background-color: #555;
+}
+
+.submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li a {
+    padding-left: 80px;
+}
+
+/* Estilos para el contenido principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+#MenuTitle {
+    color: blue;
+}
