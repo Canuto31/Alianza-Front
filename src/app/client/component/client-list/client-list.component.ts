@@ -9,6 +9,8 @@ import { ClientService } from '../../service/client.service';
 })
 export class ClientListComponent implements OnInit{
   clients: Client[] = [];
+  clientsFilter: Client[] = [];
+  searchKey: string = '';
 
   constructor(
     private clientService: ClientService
@@ -19,6 +21,21 @@ export class ClientListComponent implements OnInit{
   }
 
   getClients(): void {
-    this.clientService.getClients().subscribe(clients => this.clients = clients);
+    this.clientService.getClients().subscribe(clients => {
+      this.clients = clients;
+      this.clientsFilter = clients;
+    });
+  }
+
+  filterClients() {
+    // Filtra los clientes en función de la búsqueda
+    // Por ejemplo, asumiendo que clients es un array de objetos con una propiedad 'sharedKey'
+    this.clientsFilter = this.clients.filter((client) =>
+      client.sharedKey.includes(this.searchKey)
+    );
+  }
+
+  showAdvancedSearch() {
+    // Implementa aquí la lógica para mostrar la búsqueda avanzada
   }
 }

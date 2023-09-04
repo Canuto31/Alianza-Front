@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ClientListComponent } from './component/client-list/client-list.component';
 import { ClientSaveComponent } from './component/client-save/client-save.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -11,7 +12,8 @@ import { ClientSaveComponent } from './component/client-save/client-save.compone
     ClientSaveComponent
   ],
   imports: [
-    CommonModule
+    CommonModule, 
+    FormsModule
   ],
   exports: [
     ClientListComponent

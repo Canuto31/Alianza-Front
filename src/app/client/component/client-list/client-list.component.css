@@ -3,3 +3,24 @@
     margin-top: 20px; /* Ajusta el margen superior según sea necesario */
   }
   
+  .button-container {
+    margin-bottom: 20px; /* Agrega margen inferior a los botones */
+  }
+  
+  .search-container {
+    margin-top: 20px; /* Agrega margen superior a la barra de búsqueda */
+    margin-bottom: 20px; /* Agrega margen inferior a la barra de búsqueda */
+  }
+  
+  .table-responsive {
+    margin-bottom: 20px; /* Agrega margen inferior a la tabla */
+  }
+
+  h3 {
+    color: blue;
+  }
+
+  .button-container button {
+    margin-right: 20px;
+  }
+  
