@@ -1,1 +1,23 @@
-<p>client-list works!</p>
+
+<div class="table-container">
+  <table class="table">
+      <thead>
+        <tr>
+          <th>Shared Key</th>
+          <th>Business Id</th>
+          <th>E-mail</th>
+          <th>Phone</th>
+          <th>Data Added</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of clients">
+          <td>{{ client.sharedKey }}</td>
+          <td>{{ client.businessId }}</td>
+          <td>{{ client.email }}</td>
+          <td>{{ client.phone }}</td>
+          <td>{{ client.dataAdded }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

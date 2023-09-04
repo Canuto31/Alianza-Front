@@ -12,6 +12,9 @@ import { ClientSaveComponent } from './component/client-save/client-save.compone
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ClientListComponent
   ]
 })
 export class ClientModule { }
